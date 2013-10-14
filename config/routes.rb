@@ -1,4 +1,7 @@
 RailsApl::Application.routes.draw do
+  root "home#welcome" 
+  get "home/welcome" => "home#welcome" 
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

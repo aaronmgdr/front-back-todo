@@ -34,9 +34,10 @@ end
 
 group :development do
   gem 'hirb'
-  gem 'better-errors'
-  gem 'binding_of_caller'
+  # gem 'better-errors'
 end
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

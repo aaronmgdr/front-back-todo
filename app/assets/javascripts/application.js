@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+//= require underscore
+//= require backbone
+
+//= require app/util
+//= require app/models/task
+//= require app/views/task-input-view
+//= require app/views/task-list-view
+//= require app/views/task-view
