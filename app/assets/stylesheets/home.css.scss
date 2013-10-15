@@ -4,11 +4,11 @@
 
 
 body {
-  background: #eee;
+  background: #eee image-url("notebook.png");
 }
 
 .container {
-  background: #f9f9f9;
+  background: rgba(255, 255, 255, 0);
   margin: 0 auto;
   padding: 1px 20px 20px;
   width: 400px;

@@ -9,7 +9,11 @@
 
   // COLLECTION
   window.Tasks = Backbone.Collection.extend({
-    model: Task
+    model: Task,
+    url: '/tasks',
+    parse: function(response) {
+      return response.results;
+    }
   });
 
 })();

@@ -15,7 +15,15 @@
       var newTaskName = $(this.el).find('[name=task_name]').val();
       // Add a new task to our collection
       this.collection.add({ name: newTaskName });
+
+      $.ajax({
+        url: "tasks/create",
+        type: "POST",
+        data: { name: newTaskName, complete: false },
+        dataType: "json"
+      });
     }
+
 
   });
 

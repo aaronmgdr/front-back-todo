@@ -27,6 +27,13 @@
       // Set the new complete status in our task model.
       // Since we're listening to changes, this will automatically call our render function.
       this.model.set({ complete: isChecked });
+
+      $.ajax({
+        url: "tasks/"+ this.model.get('name'),
+        type: "put",
+        data: {name: this.model.get('name'), complete: isChecked },
+        dataType: "json"
+      });
     },
 
     render: function () {
